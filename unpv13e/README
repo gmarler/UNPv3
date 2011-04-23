@@ -5,6 +5,11 @@ Execute the following from the src/ directory:
 
     ./configure    # try to figure out all implementation differences
 
+For Solaris 11, using C99 from Studio 12.2:
+    CC=/opt/solstudio12.2/bin/c99 \
+    CFLAGS="-D__EXTENSIONS__ -D_XOPEN_SOURCE=600" \
+    ./configure
+
     cd lib         # build the basic library that all programs need
     make           # use "gmake" everywhere on BSD/OS systems
 
