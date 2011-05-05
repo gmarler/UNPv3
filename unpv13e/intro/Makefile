@@ -19,8 +19,17 @@ daytimetcpcli2:	daytimetcpcli2.o
 daytimetcpcli3:	daytimetcpcli3.o
 		${CC} ${CFLAGS} -o $@ daytimetcpcli3.o ${LIBS}
 
+daytimetcpcli-ex4.2:	daytimetcpcli-ex4.2.o
+		${CC} ${CFLAGS} -o $@ daytimetcpcli-ex4.2.o ${LIBS}
+
 daytimetcpsrv:	daytimetcpsrv.o
 		${CC} ${CFLAGS} -o $@ daytimetcpsrv.o ${LIBS}
+
+daytimetcpsrv-ex4.4:	daytimetcpsrv-ex4.4.o
+		${CC} ${CFLAGS} -o $@ daytimetcpsrv-ex4.4.o ${LIBS}
+
+daytimetcpsrv-ex4.5:	daytimetcpsrv-ex4.5.o
+		${CC} ${CFLAGS} -o $@ daytimetcpsrv-ex4.5.o ${LIBS}
 
 daytimetcpsrv1:	daytimetcpsrv1.o
 		${CC} ${CFLAGS} -o $@ daytimetcpsrv1.o ${LIBS}
